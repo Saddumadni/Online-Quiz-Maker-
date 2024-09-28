@@ -1,0 +1,54 @@
+
+<!-- 
+ https://github.com/Saddumadni 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Online Quiz Maker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Online Quiz Maker!</h1>
+        <button id="createQuizBtn">Create a Quiz</button>
+        <button id="takeQuizBtn">Take a Quiz</button>
+        <div id="quizForm" class="hidden">
+            <h2>Create a Quiz</h2>
+            <input type="text" id="quizTitle" placeholder="Quiz Title" required>
+            <div id="questionsContainer"></div>
+            <button id="addQuestionBtn">Add Question</button>
+            <button id="submitQuizBtn">Submit Quiz</button>
+        </div>
+
+        <div id="quizListing" class="hidden">
+            <h2>Available Quizzes</h2>
+            <ul id="quizList"></ul>
+        </div>
+
+        <div id="quizTaking" class="hidden">
+            <h2 id="takingQuizTitle"></h2>
+            <div id="questionDisplay"></div>
+            <button id="nextQuestionBtn" class="hidden">Next Question</button>
+            <div id="resultDisplay" class="hidden"></div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+          <h3>Mohd Sadiq</h3>
+          <p>Make it work, Make it fast</p>
+          <div class="copyright">
+            &copy; Copyright <strong><span>sadducoding</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">sadducoding</a>
+          </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
